@@ -1,0 +1,39 @@
+.location-search-menu-container {
+  height: auto;
+  width: 459px;
+  padding: 30px 42px;
+  color: #E7E7EB;
+  background-color: #1E213A;
+}
+
+.search-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-button {
+  margin-left: 9px;
+  background-color: #3C47E9;
+  color: #E7E7EB;
+  border: 1px solid #3C47E9;
+  padding: 14px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.close-icon {
+  font-family: 'Material Icons';
+  font-size: 30px;
+}
+
+.location-search-menu-header {
+  width: 100%;
+  text-align: right;
+  margin-bottom: 45px;
+}
+
+.search-result-container {
+  margin-top: 58px;
+}

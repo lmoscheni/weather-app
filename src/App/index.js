@@ -1,10 +1,15 @@
+import { useState } from "react";
+
 import Sidebar from "../components/Sidebar";
-import currentWeatherInfo from "../hooks/currentWeatherInfo";
+import getWeatherInfo from "../hooks/getWeatherInfo";
 
 import "./styles.css";
 
 function App() {
-  const { weatherInfo, locationInfo, error, isLoading } = currentWeatherInfo();
+  const [location, setLocation] = useState(null);
+  const { weatherInfo, locationInfo, error, isLoading } = getWeatherInfo(
+    location
+  );
   if (isLoading) {
     return <div> Loading...</div>;
   }
@@ -15,7 +20,11 @@ function App() {
 
   return (
     <div className="app-container">
-      <Sidebar weatherInfo={weatherInfo} locationInfo={locationInfo} />
+      <Sidebar
+        setLocation={setLocation}
+        weatherInfo={weatherInfo}
+        locationInfo={locationInfo}
+      />
     </div>
   );
 }

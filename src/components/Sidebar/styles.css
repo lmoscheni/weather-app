@@ -1,6 +1,7 @@
 .sidebar-container {
-  min-height:100vh;
+  height: auto;
   width: 459px;
+  padding-bottom: 52px;
   color: #E7E7EB;
   background-color: #1E213A;
 }

@@ -1,8 +1,12 @@
+import { useState } from "react";
+
+import LocationSearchMenu from "./LocationSearchMenu";
 import WeatherIcon from "../WeatherIcon";
 
 import "./styles.css";
 
 export default function Sidebard(props) {
+  const [openMenu, setOpenMenu] = useState(false);
   const { consolidated_weather } = props?.weatherInfo ?? {
     consolidated_weather: [],
   };
@@ -12,16 +16,30 @@ export default function Sidebard(props) {
   };
 
   const today = new Date();
-  console.log("Sidebard", consolidated_weather[0]);
+
+  const openMenuHandler = () => setOpenMenu(true);
+  const closeMenuHandler = () => setOpenMenu(false);
+
+  if (openMenu) {
+    return (
+      <LocationSearchMenu
+        setLocation={props.setLocation}
+        onClose={closeMenuHandler}
+      />
+    );
+  }
 
   return (
     <div className="sidebar-container">
       <div className="weather-location-selector">
-        <button className="cta-button cta-search-location">
+        <button
+          className="cta-button cta-search-location"
+          onClick={openMenuHandler}
+        >
           Search for places
         </button>
         <button className="cta-button cta-current-location">
-          <span class="material-icons-round">gps_fixed</span>
+          <span className="material-icons-round">gps_fixed</span>
         </button>
       </div>
       <div className="weather-current-state-container">
@@ -41,7 +59,7 @@ export default function Sidebard(props) {
         </span>
       </div>
       <div className="weather-location-info">
-        <span class="place-icon material-icons-round">place</span>{" "}
+        <span className="place-icon material-icons-round">place</span>{" "}
         {props?.locationInfo?.title || "unknowkn"}
       </div>
     </div>

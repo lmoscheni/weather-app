@@ -1,0 +1,34 @@
+.search-input-container {
+  width: 100%;
+  height: 48px;
+  font-size: 16px;
+  padding: 15px;
+  border: 1px solid #E7E7EB;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.search-icon {
+  font-family: 'Material Icons';
+  color: #616475;
+  margin-right: 7px;
+}
+
+.search-input-container > input {
+  width: 100%;
+  color: inherit;
+  background-color: inherit;
+  border: none;
+  box-shadow: none;
+}
+
+.search-input-container > input:focus {
+  /* border: none; */
+  outline: none;
+  border-bottom: 1px solid #E7E7EB;
+  box-shadow: none;
+}

@@ -1,0 +1,23 @@
+.search-result-item {
+  width: 100%;
+  padding-left: 5px;
+  padding-top: 23px;
+  padding-bottom: 23px;
+  font-size: 16px;
+  color: #E7E7EB;
+}
+
+.search-result-item:hover {
+  border: 1px solid #616475;
+  box-sizing: border-box;
+  /* af */
+}
+
+.search-result-item:hover:after {
+  float: right;
+  color: #616475 !important;
+  font-size: 18px;
+  font-weight: bold;
+  padding-right: 16px;
+  content: ">"
+}

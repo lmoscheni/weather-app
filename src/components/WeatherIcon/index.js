@@ -7,10 +7,9 @@ export default function WeatherIcon({ type }) {
     return null;
   }
 
-
   return (
     <div className="weather-icon-container">
-      <img src={images[type]} alt={type} />
+      <img src={images[type.replace(" ", "")]} alt={type} />
     </div>
   );
 }
