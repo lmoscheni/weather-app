@@ -4,7 +4,7 @@ import HeavyCloud from "./HeavyCloud.png";
 import HeavyRain from "./HeavyRain.png";
 import LightCloud from "./LightCloud.png";
 import LightRain from "./LightRain.png";
-import Shower from "./Shower.png";
+import Showers from "./Showers.png";
 import Sleet from "./Sleet.png";
 import Snow from "./Snow.png";
 import Thunderstorm from "./Thunderstorm.png";
@@ -17,7 +17,7 @@ export default {
   HeavyRain,
   LightCloud,
   LightRain,
-  Shower,
+  Showers,
   Sleet,
   Snow,
   Thunderstorm
