@@ -1,0 +1,9 @@
+.weather-icon-container {
+  width: 202px;
+  height: 234px;
+}
+
+.weather-icon-container > img {
+  width: auto;
+  height: auto;
+}
