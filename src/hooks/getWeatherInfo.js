@@ -49,6 +49,7 @@ export default function getWeatherInfo(location) {
           setIsLoading(false);
         });
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [weatherInfo, location, error]);
 
   return {
