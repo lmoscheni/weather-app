@@ -38,7 +38,10 @@ export default function Sidebard(props) {
         >
           Search for places
         </button>
-        <button className="cta-button cta-current-location">
+        <button
+          className="cta-button cta-current-location"
+          onClick={() => props.setLocation(null)}
+        >
           <span className="material-icons-round">gps_fixed</span>
         </button>
       </div>
