@@ -5,8 +5,7 @@ export default function Loader({ isLoading, children }) {
   if (isLoading) {
     return (
       <div className="loader-container">
-        {/* <div className="lds-dual-ring"></div> */}
-        <div class="lds-ripple"><div></div><div></div></div>
+        <div className="lds-ripple"><div></div><div></div></div>
       </div>
     );
   }
