@@ -1,5 +1,6 @@
 import { useState } from "react";
 
+import Loader from "../components/Loader";
 import Sidebar from "../components/Sidebar";
 import getWeatherInfo from "../hooks/getWeatherInfo";
 
@@ -10,22 +11,21 @@ function App() {
   const { weatherInfo, locationInfo, error, isLoading } = getWeatherInfo(
     location
   );
-  if (isLoading) {
-    return <div> Loading...</div>;
-  }
 
   if (error) {
     return <div>Error!</div>;
   }
 
   return (
-    <div className="app-container">
-      <Sidebar
-        setLocation={setLocation}
-        weatherInfo={weatherInfo}
-        locationInfo={locationInfo}
-      />
-    </div>
+    <Loader isLoading={isLoading || !weatherInfo}>
+      <div className="app-container">
+        <Sidebar
+          setLocation={setLocation}
+          weatherInfo={weatherInfo}
+          locationInfo={locationInfo}
+        />
+      </div>
+    </Loader>
   );
 }
 
