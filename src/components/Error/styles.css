@@ -1,0 +1,16 @@
+.error-container {
+  margin: 0;
+  padding-top: 40px;
+  height: 100vh;
+  width: 100%;
+  color: #A09FB1;
+  background-color: #100E1D;
+  text-align: center;
+}
+
+.icon-container {
+  font-family: 'Material Icons';
+  color: red;
+  font-size: 150px;
+  font-weight: bold;
+}
