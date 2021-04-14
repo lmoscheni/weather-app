@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 import Loader from "../components/Loader";
+import Error from "../components/Error";
 import Sidebar from "../components/Sidebar";
 import getWeatherInfo from "../hooks/getWeatherInfo";
 
@@ -13,7 +14,7 @@ function App() {
   );
 
   if (error) {
-    return <div>Error!</div>;
+    return <Error/>;
   }
 
   return (
