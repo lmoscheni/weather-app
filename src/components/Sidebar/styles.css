@@ -22,6 +22,8 @@
 .cta-current-location {
   font-family: 'Material Icons';
   padding: 9px !important;
+  max-height: 48px !important;
+  max-width: 48px !important;
   border-radius: 50%;
   border: solid #6E707A;
 }
