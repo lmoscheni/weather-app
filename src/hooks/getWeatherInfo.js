@@ -26,8 +26,12 @@ export default function getWeatherInfo(location) {
   const [error, setError] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
 
+  const isLocationChanged =
+    (!!locationInfo && location && locationInfo.woeid !== location.woeid) ||
+    (!location && !!locationInfo);
+
   useEffect(() => {
-    if ((!weatherInfo && !error) || (!!location && locationInfo.woeid !== location.woeid)) {
+    if ((!weatherInfo && !error) || isLocationChanged) {
       setIsLoading(true);
       getPosition(location)
         .then((currentPosition) =>
@@ -49,7 +53,7 @@ export default function getWeatherInfo(location) {
           setIsLoading(false);
         });
     }
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [weatherInfo, location, error]);
 
   return {
