@@ -21,7 +21,10 @@
 
 .cta-current-location {
   font-family: 'Material Icons';
-  padding: 9px !important;
+  /* padding: 9px !important; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
   max-height: 48px !important;
   max-width: 48px !important;
   border-radius: 50%;
