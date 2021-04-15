@@ -37,3 +37,7 @@
 .search-result-container {
   margin-top: 58px;
 }
+
+.button:disabled {
+  background-color: grey;
+}

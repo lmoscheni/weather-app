@@ -32,18 +32,18 @@ export default function Sidebard(props) {
   return (
     <div className="sidebar-container">
       <div className="weather-location-selector">
-        <button
+        <div
           className="cta-button cta-search-location"
           onClick={openMenuHandler}
         >
           Search for places
-        </button>
-        <button
+        </div>
+        <div
           className="cta-button cta-current-location"
           onClick={() => props.setLocation(null)}
         >
           <span className="material-icons-round">gps_fixed</span>
-        </button>
+        </div>
       </div>
       <div className="weather-current-state-container">
         <WeatherIcon type={weather_state_name} />
