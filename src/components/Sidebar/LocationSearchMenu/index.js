@@ -47,7 +47,7 @@ export default function LocationSearchMenu({ onClose, setLocation }) {
         <button
           className="search-button"
           onClick={search.bind(this, query)}
-          disable={!isValidQuery(query)}
+          disabled={!isValidQuery(query)}
         >
           Search
         </button>

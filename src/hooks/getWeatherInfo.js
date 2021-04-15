@@ -26,12 +26,13 @@ export default function getWeatherInfo(location) {
   const [error, setError] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
 
-  const isLocationChanged =
-    (!!locationInfo && location && locationInfo.woeid !== location.woeid) ||
-    (!location && !!locationInfo);
+  const initialFetch = !locationInfo && !weatherInfo && !error;
+  const isLocationChanged = !!location
+    ? locationInfo.woeid !== location.woeid
+    : !!locationInfo && !!weatherInfo && !isLoading;
 
   useEffect(() => {
-    if ((!weatherInfo && !error) || isLocationChanged) {
+    if (initialFetch || isLocationChanged) {
       setIsLoading(true);
       getPosition(location)
         .then((currentPosition) =>

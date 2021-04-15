@@ -21,8 +21,9 @@ export default function SearchResult({
 
   return (
     <>
-      {items.map((item) => (
+      {items.map((item, index) => (
         <SearchResultItem
+          key={`${item.title}-${index}`}
           value={item}
           setLocation={setLocation}
           closeMenu={closeMenu}
