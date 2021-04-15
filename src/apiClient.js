@@ -2,7 +2,7 @@ import axios from "axios";
 
 const SEARCH_LOCATION_URL = "https://www.metaweather.com/api/location/search/";
 const WEATHER_URL = "https://www.metaweather.com/api/location";
-const CORS_ENABLE_URL = "https://cors-anywhere.herokuapp.com";
+const CORS_ENABLE_URL = "https://immense-earth-00468.herokuapp.com/";
 
 const corsHeaders = {
   origin: window.location.href,
