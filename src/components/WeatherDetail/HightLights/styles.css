@@ -1,0 +1,23 @@
+.hight-lights-container {
+  margin: 13px;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.hight-lights-title {
+  width: 100%;
+}
+
+.hight-lights-info {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  /* font-size: 36px; */
+}
