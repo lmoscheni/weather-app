@@ -1,0 +1,17 @@
+.footer-container {
+  width: 100%;
+  color: #A09FB1;
+  text-align: center;
+  font-size: 14px;
+  font-family: "Montserrat";
+}
+
+.footer-content {
+  margin-top: 3rem;
+  margin-bottom: 0;
+}
+
+.user-info {
+  font-weight: bold;
+  text-decoration: underline;
+}
