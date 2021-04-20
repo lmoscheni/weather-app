@@ -1,4 +1,6 @@
 import HightLightItem from "./HightLightItem";
+import ProgressBar from "./ProgressBar";
+import WindIcon from "./WindIcon";
 
 import "./styles.css";
 
@@ -17,7 +19,12 @@ export default function HightLights({ todayInfo }) {
       <h1 className="hight-lights-title">Today’s Hightlights</h1>
       <div className="hight-lights-info">
         {items.map((item) => (
-          <HightLightItem key={item.title} {...item} />
+          <HightLightItem key={item.title} {...item}>
+            {item.title === "Humidity" ? (
+              <ProgressBar completed={todayInfo.humidity} />
+            ) : null}
+            {item.title === "Wild Status" ? <WindIcon /> : null}
+          </HightLightItem>
         ))}
       </div>
     </div>
