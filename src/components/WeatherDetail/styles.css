@@ -1,0 +1,6 @@
+.weather-detail-container {
+  flex: 1;
+  padding: 3rem 1rem 1rem 3rem;
+  background-color: #100e1d;
+  color: #e7e7eb;
+}
