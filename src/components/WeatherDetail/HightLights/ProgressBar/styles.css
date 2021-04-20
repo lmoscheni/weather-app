@@ -1,0 +1,36 @@
+.progress-bar-container {
+  height: 8px;
+  width: 100%;
+  border-radius: 80px;
+  
+  background-color: #E7E7EB;
+
+  font-size: 12px;
+}
+
+.progress-bar-container::after {
+  float: right;
+  content: "%";
+}
+
+.progress-bar-indicator {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.initial-indicator {
+  width: 33.33%;
+  text-align: left;
+}
+
+.middle-indicator {
+  width: 33.33%;
+  text-align: center;
+}
+
+.final-indicator {
+  width: 33.33%;
+  text-align: right;
+}
