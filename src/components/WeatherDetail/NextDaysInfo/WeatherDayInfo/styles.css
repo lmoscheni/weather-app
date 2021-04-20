@@ -1,0 +1,25 @@
+.weather-day-info-container {
+  width: 120px;
+  height: 177px;
+  /* margin: 13px; */
+  margin: 13px 0;
+  padding: 22px 18px;
+  background-color: #1e213a;
+  color: inherit;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  justify-content: space-between;
+}
+
+.weather-icon img {
+  width: 64px;
+  height: 64px;
+}
+
+.weather-temp-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
