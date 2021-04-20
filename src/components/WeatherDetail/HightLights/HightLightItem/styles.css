@@ -26,8 +26,22 @@
 
 .hight-light-item-measure {
   font-weight: bold;
+  margin: 3px;
 }
 
 .hight-light-item-unit {
+  margin: 3px;
   font-weight: light;
+}
+
+.hight-light-child {
+  width: 75%;
+  height: auto;
+  padding: 0 40px;
+  margin-bottom: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
