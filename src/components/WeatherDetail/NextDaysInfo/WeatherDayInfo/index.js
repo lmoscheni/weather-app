@@ -1,4 +1,4 @@
-import { format, isTomorrow } from "date-fns";
+import { format } from "date-fns";
 
 import WeatherIcon from "../../../WeatherIcon";
 
