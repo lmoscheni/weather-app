@@ -1,5 +1,5 @@
 .hight-light-item-container {
-  width: 328px;
+  width: 270px;
   margin: 1em 0;
   padding: 1em;
 
@@ -44,4 +44,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+@media (min-width:961px) {
+  .hight-light-item-container {
+    width: 328px;
+  }
 }

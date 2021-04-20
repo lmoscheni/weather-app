@@ -1,11 +1,11 @@
 .hight-lights-container {
-  margin: 13px;
+  padding: 13px;
 
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: stretch;
+  justify-content: center;
+  align-items: center;
 }
 
 .hight-lights-title {
@@ -17,6 +17,17 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+}
+
+@media (min-width:560px) {
+  .hight-lights-info {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
