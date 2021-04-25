@@ -3,8 +3,8 @@
   width: 100%;
   padding: 42px;
   padding-bottom: 52px;
-  color: #E7E7EB;
-  background-color: #1E213A;
+  color: #e7e7eb;
+  background-color: #1e213a;
 
   display: flex;
   flex-direction: column;
@@ -20,19 +20,19 @@
 .cta-button {
   font-size: 16px;
   border-radius: 7px;
-  color: #E7E7EB;
+  color: #e7e7eb;
   padding: 10px 18px;
-  background-color: #6E707A;
+  background-color: #6e707a;
 }
 
 .cta-current-location {
-  font-family: 'Material Icons';
+  font-family: "Material Icons";
   padding: 9px !important;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  border: solid #6E707A;
+  border: solid #6e707a;
 }
 
 .weather-location-selector {
@@ -40,7 +40,11 @@
 }
 
 .weather-current-state-container {
-  background-image: url("./images/Cloud-background.png");
+  background-image: linear-gradient(
+      rgba(30, 33, 58, 0.9),
+      rgba(30, 33, 58, 0.9)
+    ),
+    url("./images/Cloud-background.png");
   background-position: center;
   background-size: cover;
 
@@ -63,21 +67,21 @@
 .weather-temperature-unit {
   font-size: 36px;
   font-weight: 600;
-  color: #A09FB1;
+  color: #a09fb1;
 }
 
 .weather-status {
   text-align: center;
   font-size: 36px;
   font-weight: 600;
-  color: #A09FB1;
+  color: #a09fb1;
 
   margin-top: 77px;
 }
 
 .weather-date-info {
   font-size: 18px;
-  color: #88869D;
+  color: #88869d;
 
   display: flex;
   justify-content: center;
@@ -96,15 +100,15 @@
   margin-top: 32px;
   font-size: 18px;
   text-align: center;
-  color: #88869D;
+  color: #88869d;
 }
 
 .place-icon {
-  font-family: 'Material Icons';
+  font-family: "Material Icons";
   margin-right: 9px;
 }
 
-@media (min-width:961px) {
+@media (min-width: 961px) {
   .sidebar-container {
     width: 459px;
   }
