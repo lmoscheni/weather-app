@@ -1,8 +1,7 @@
 .sidebar-container {
   height: auto;
   width: 100%;
-  padding: 42px;
-  padding-bottom: 52px;
+  padding: 1em;
   color: #e7e7eb;
   background-color: #1e213a;
 
@@ -75,8 +74,7 @@
   font-size: 36px;
   font-weight: 600;
   color: #a09fb1;
-
-  margin-top: 77px;
+  margin-top: 1em;
 }
 
 .weather-date-info {
@@ -111,5 +109,8 @@
 @media (min-width: 961px) {
   .sidebar-container {
     width: 459px;
+  }
+  .weather-status {
+    margin-top: 3em;
   }
 }

@@ -21,7 +21,7 @@
   align-items: center;
 }
 
-@media (min-width:560px) {
+@media (min-width: 961px) {
   .hight-lights-info {
     width: 100%;
     display: flex;
