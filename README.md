@@ -1,70 +1,36 @@
-# Getting Started with Create React App
+# Weather App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+This app belongs to the [dev challenge](https://devchallenges.io/challenges/mM1UIenRhK808W8qmLWv).
 
-In the project directory, you can run:
+```
+Challenge: Create a weather app using an API. Use Front-end libraries like React or Vue. Don’t look at the existing solution. Fulfill user stories below
+```
 
-### `npm start`
+## Features and Stories:
+- [x] I can see city weather as default, preferably my current location
+- [x] I can search for city
+- [x] I can see weather of today and the next 5 days
+- [x] I can see the date and location of the weather
+- [x] I can see according to image for each type of weather
+- [x] I can see the min and max degree each day
+- [x] I can see wind status and wind direction
+- [x] I can see humidity percentage
+- [x] I can see a visibility indicator
+- [x] I can see the air pressure number
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Optional Features and Stories:
+- [x] I can request my current location weather
+- [ ] I can convert temperature in Celcius to Fahrenheit and vice versa
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Pendings
+- [ ] Testing components
 
-### `npm test`
+## Run, Build and CRA Info
+To see this info please enter [here.](./doc/CRAInfo.md)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Architecture, hosting, and more
+The app use an API gateway based on `cors-anywhere` (npm package) hostend on Heroku to solve the problem with CORS Accesss.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The app is hosted on [Vercel](https://weather-app-sigma-two.vercel.app/). Remember to use the app for now is necesary enable location action in your device and browser.
