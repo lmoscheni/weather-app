@@ -20,7 +20,6 @@ function getPosition(location) {
 }
 
 export default function getWeatherInfo(location) {
-  console.log(`Running currentWeatherInfo Hook`, location);
   const [locationInfo, setLocationInfo] = useState(null);
   const [weatherInfo, setWeatherInfo] = useState(null);
   const [error, setError] = useState(null);

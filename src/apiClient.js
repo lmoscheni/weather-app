@@ -10,7 +10,6 @@ const corsHeaders = {
 };
 
 export function findLocationByCoords(latitude, longitude) {
-  console.log("findLocationByCoords");
   return axios
     .get(
       `${CORS_ENABLE_URL}/${SEARCH_LOCATION_URL}?lattlong=${latitude},${longitude}`,
@@ -20,7 +19,6 @@ export function findLocationByCoords(latitude, longitude) {
 }
 
 export function findLocationByQuery(query) {
-  console.log("findLocationByQuery");
   return axios
     .get(`${CORS_ENABLE_URL}/${SEARCH_LOCATION_URL}?query=${query}`, {
       header: corsHeaders,
@@ -29,7 +27,6 @@ export function findLocationByQuery(query) {
 }
 
 export function getWeatherInfoByLocationId(locationId) {
-  console.log("getWeatherInfoByLocationId");
   return axios
     .get(`${CORS_ENABLE_URL}/${WEATHER_URL}/${locationId}`, {
       header: corsHeaders,
