@@ -5,8 +5,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 This app belongs to the [dev challenge](https://devchallenges.io/challenges/mM1UIenRhK808W8qmLWv).
 
 ```
-Challenge: Create a weather app using an API. Use Front-end libraries like React or Vue. Don’t look at the existing solution. Fulfill user stories below
+Challenge: Create a weather app using an API. Use Front-end libraries like React or Vue. Don’t look at the existing solution. Fulfill user stories below.
 ```
+[DEMO.](https://weather-app-sigma-two.vercel.app/)
 
 ## Features and Stories:
 - [x] I can see city weather as default, preferably my current location
